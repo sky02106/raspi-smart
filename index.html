@@ -60,7 +60,6 @@
     		var substringText = strText.substr(0,200)+" ...";
     		var notiSms = document.getElementById('noti-sms');
     		var notiKakao = document.getElementById('noti-kakao');
-    		var notiFacebook = document.getElementById('noti-facebook');
     		var notiGmail = document.getElementById('noti-gmail');
     		var notiCall = document.getElementById('noti-call');    		
     		/** Call */
@@ -95,15 +94,6 @@
                   responsiveVoice.speak("문자가 전송되었습니다. 번호."+data.title,"Korean Female");
                 }
     		}
-    		/** Facebook */
-    		else if(data.package === "com.facebook.katana" || data.package === "com.facebook.orca"){
-    			console.log("Facebook!!!!!!!"+data.title+":"+data.text);
-				notiFacebook.innerHTML = "알림:"+data.title;
-    			if(responsiveVoice.voiceSupport()) {
-                  responsiveVoice.speak("페이스북 알림."+data.title,"Korean Female");
-                }
-    		}
-    		
     	});
    	</script>
 	
@@ -167,9 +157,6 @@
 				</div>
 				<div class="weather-week-descriptor fade" ng-show="focus == 'default'">
 					<div class="weather-week-descriptor">
-						<!-- UI를 위해 생략
-	              <span>{{hourlyForcast.summary}}</span>
-	              <span>{{weeklyForcast.summary}}</span> -->
 					</div>
 					<div class="weather-week" ng-repeat="forcast in weeklyForcast.data"
 						ng-if="$index > 0">
@@ -260,10 +247,6 @@
 					<dd>라즈베리 카메라를 이용해 사진을 촬영합니다.</dd>
 					<dt>비디오 촬영</dt>
 					<dd>라즈베리 카메라를 이용해 비디오를 촬영합니다.</dd>
-					<dt>불 켜</dt>
-					<dd>미러의 LED를 켭니다.</dd>
-					<dt>불 꺼 </dt>
-					<dd>미러의 LED를 끕니다.</dd>
 					<dt>너는 누구니</dt>
 					<dd>미러는 누구일까요?</dd>
 					<dt>디버그</dt>
@@ -277,8 +260,7 @@
 
 			</div>
 			<div class="bottom-left">
-				<!-- 하단부 왼쪽 핸드폰 페어링 -->
-				<!-- 안드로이드와 통신하여 Notification (전화,Facebook,카카오톡,문자, 메일)을 받습니다. -->
+				
 				<div id="titleNoti">
 					<span>알림</span>
 				</div>
