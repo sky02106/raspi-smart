@@ -22,12 +22,10 @@
 	width:1000px;height:600px;
 }
 
-/* 스마트 미러 소개 */
 #smartmirror_kjc {
 	width:500px;
 	height: 600px;	
 }
-/* 개발자 소개 */
 #profile {
 	width:150px;height:150px;
 }
@@ -36,7 +34,6 @@
 	color:white;
 }
 
-/* 미러 개발 */
 #smartmirror_made{
 	width:570px;height:200px;
 }
