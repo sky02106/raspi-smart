@@ -24,13 +24,11 @@ var COMMANDS  = { "en" : {
   "news" : "Show me news",
   "photo" : "Take a photo",
   "video" : "Take a video",
-  "lighton" : "Light on",
-  "lightoff" : "Light off"
 },
   "ko" : {
     "voice" : "Korean Female",
     "default" : '"메뉴"라고 말해 보세요',
-    "hi" : '안녕 정출',
+    "hi" : '안녕하세요',
     "whatcanisay" : '메뉴',
     "whois" : "너는 누구니",
     "home" : '홈으로',
@@ -53,7 +51,5 @@ var COMMANDS  = { "en" : {
     "news" : "뉴스 보여 줘",
     "photo" : "사진 촬영",
     "video" : "비디오 촬영",
-	"lighton" : "불 켜",
-	"lightoff" : "불 꺼"
   }
 };
