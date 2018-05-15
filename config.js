@@ -16,9 +16,9 @@ var config = {
     traffic: {
       key : ".....", // Bing Maps API Key
       mode : "Transit", // Possibilities: Driving / Transit / Walking
-      origin : "Suwon", // Start of your trip. Human readable address.
-      destination : "Yangjae", // Destination of your trip. Human readable address.
-      name : "스마트커넥티드융합기술과정", // Name of your destination ex: "work"
+      origin : "Gumi", // Start of your trip. Human readable address.
+      destination : "Gumi", // Destination of your trip. Human readable address.
+      name : "캡스톤디자인", // Name of your destination ex: "work"
       reload_interval : 5 // Number of minutes the information is refreshed
     },
 
