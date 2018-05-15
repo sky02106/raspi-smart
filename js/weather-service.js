@@ -34,7 +34,6 @@
             // Add human readable info to info
             for (var i = 0; i < service.forcast.data.daily.data.length; i++) {
 
-                /** 한글 UI 변경 - KimJeongChul*/
                 var day = moment.unix(service.forcast.data.daily.data[i].time).format('ddd');
                 if(day == "Mon") service.forcast.data.daily.data[i].day = "월";
                 else if(day == "Tue") service.forcast.data.daily.data[i].day = "화";
