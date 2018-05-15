@@ -8,7 +8,6 @@
     var OTHERDAY_CODE = 1;
     service.stationrow = null;
 
-    /** 서울시 역코드로 서울시 지하철역별 열차 도착 정보 검색
     * http://data.seoul.go.kr/openinf/openapiview.jsp?infId=OA-103&tMenu=11 */
 
     service.init = function(station){
