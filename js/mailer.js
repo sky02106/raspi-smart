@@ -21,8 +21,8 @@ module.exports.sendEmail = function(file) {
 	console.log('Sendig an Email..');
 	 
 	var mailOptions = {
-	    from: 'Smart Mirror <smartmirror.kjc@gmail.com>',
-	    to: 'kjc5443@gmail.com',
+	    from: 'Smart Mirror <sky02106@gmail.com>',
+	    to: 'jmw9624@naver.com',
 	    subject: '[Smart mirror] 사진(동영상)이 도착하였습니다. 확인해주세요',
 	    html: '<b>안녕하세요</b>,<br/><br/> 사진(동영상)을 첨부파일에서 확인해주세요.<br/>스마트미러를 통해 확인 가능합니다.<br/><br/> Smart Mirror : ' + Date() + ' <br/><br/>Dear,<br/><i>Smart Mirror</i>',
 	    attachments: [{
