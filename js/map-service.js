@@ -3,7 +3,7 @@
 
     function MapService() {
         var service = {};
-        service.center = "Suwon, Korea"; //default map locaiton
+        service.center = "Seoul, Korea"; //default map locaiton
         service.zoom = 13; //default zoom is 13
 
         service.generateMap = function(targetCenter, targetZoom) {
