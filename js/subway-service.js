@@ -22,7 +22,7 @@
     };
 
     var getLinecode = function(linenumber){
-      /* 서울 1 ~ 9 호선 */
+      
       if(linenumber === "신분당"){
         return "S";
       }
@@ -55,19 +55,19 @@
 
     var getUpDownCode = function(updown){
       if(updown === "상행선"){
-        return 1; // 상행선
+        return 1;
       }
-      return 2; // 하행선
+      return 2;
     }
 
     var getWeekCode = function() {
       var now = new Date();
       var today = now.getDay();
-      //saturday
+
       if(today === 6){
         return SATURDAY_CODE;
       }
-      //sunday
+
       if(today === 7){
         return SUNDAY_CODE;
       }
